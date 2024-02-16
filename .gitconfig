@@ -1,21 +1,21 @@
 [user]
-	email = bivolaru.victor@gmail.com
-        name = bivolaruvictor
+  email = bivolaru.victor@gmail.com
+  name = bivolaruvictor
+[init]
+  defaultBranch = main
 [include]
-        path = ~/.config/gitalias/gitalias.txt
+  path = ~/.config/gitalias/gitalias.txt
 [credential "https://github.com"]
-        helper =
-        helper = !/usr/bin/gh auth git-credential
+  helper = !/usr/bin/gh auth git-credential
 [credential "https://gist.github.com"]
-        helper =
-        helper = !/usr/bin/gh auth git-credential
+  helper = !/usr/bin/gh auth git-credential
 [core]
-        editor = code --wait
+  editor = nvim
 [merge]
-        tool = vscode
-[mergetool "vscode"]
-    cmd = code --wait --merge $REMOTE $LOCAL $BASE $MERGED
+  tool = nvim
+[mergetool "nvim"]
+  cmd = nvim --merge $REMOTE $LOCAL $BASE $MERGED
 [diff]
-    tool = vscode
-[difftool "vscode"]
-    cmd = code --wait --diff $LOCAL $REMOTE
+  tool = nvim
+[difftool "nvim"]
+  cmd = nvim --diff $LOCAL $REMOTE
