@@ -1,0 +1,21 @@
+[user]
+	email = bivolaru.victor@gmail.com
+        name = bivolaruvictor
+[include]
+        path = ~/.config/gitalias/gitalias.txt
+[credential "https://github.com"]
+        helper =
+        helper = !/usr/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+        helper =
+        helper = !/usr/bin/gh auth git-credential
+[core]
+        editor = code --wait
+[merge]
+        tool = vscode
+[mergetool "vscode"]
+    cmd = code --wait --merge $REMOTE $LOCAL $BASE $MERGED
+[diff]
+    tool = vscode
+[difftool "vscode"]
+    cmd = code --wait --diff $LOCAL $REMOTE
