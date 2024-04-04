@@ -6,4 +6,6 @@ M.ui = {
   theme_toggle = { "catppuccin", "blossom_light" },
 -- ...
 }
+
+M.mappings = require "custom.mappings"
 return M

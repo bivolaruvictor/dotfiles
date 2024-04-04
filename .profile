@@ -26,10 +26,5 @@ if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
 fi
 
-export PATH="$PATH:$HOME/.local/bin/kubectl"
 export PATH="$PATH:$HOME/.local/bin/poetry"
-export PATH="$PATH:$HOME/.local/bin/kubeadm"
-export PATH="$PATH:$HOME/.local/bin/kind"
-export PATH="$PATH:$HOME/.local/bin/minikube"
 
-source <(kubectl completion bash)

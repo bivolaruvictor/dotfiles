@@ -32,3 +32,9 @@ $ stow .
 ```
 
 Further references regarding NvChad custom configuration: https://github.com/siduck/dotfiles/tree/master/nvchad/custom
+
+
+Install NvChad using the default installation
+
+Create a symlink from custom to $nvchaddir/config/lua/custom
+
